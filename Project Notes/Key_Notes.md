@@ -76,6 +76,22 @@
   - Email templates for notifications and updates.
   - Configurable SMTP settings for different environments.
 
+### App Installation Module
+- Purpose: Facilitate initial setup of the application.
+- Trigger Condition: Only runs if no `.env` file is detected.
+- Features to include:
+  - Generate `.env` file with default or user-provided values.
+  - Validate system requirements (e.g., PHP version, extensions).
+  - Set up database connection and run initial migrations/seeds.
+
+### App Update Handling Module
+- Purpose: Manage updates to the application.
+- Features to include:
+  - Detect and apply new database migrations.
+  - Run new database seeds if available.
+  - Provide a summary of changes applied.
+  - Ensure backward compatibility and data integrity.
+
 ## Roles
 
 ### Admin Role
